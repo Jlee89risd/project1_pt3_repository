@@ -1,7 +1,9 @@
+/* root is same as html{} for css.  */
 :root{
   --bg: rgb(206, 202, 196);
   --card: whitesmoke;
   --text: #111;
+  /* muted is for less important text */
   --muted: #333;
   --line: rgba(0,0,0,0.14);
   --shadow: 0 14px 40px rgba(0,0,0,0.18);
@@ -17,7 +19,7 @@ body{
 }
 
 .frame{
-  width: min(92vw, 920px);      /* ✅ 지금보다 살짝 더 크게 */
+  width: min(92vw, 920px);   
   margin: 24px auto 60px;
   background: var(--card);
   padding: 26px;

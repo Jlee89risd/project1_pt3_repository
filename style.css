@@ -28,7 +28,7 @@ body{
   font-weight: 650;
 }
 
-.sub{
+.direction{
   margin: 10px 0 0;
   color: var(--muted);
   font-size: 13px;
@@ -40,7 +40,7 @@ body{
   padding: 10px 18px 60px;
 }
 
-/* 날짜 섹션 */
+/* date */
 .day{
   border-top: 1px solid var(--line);
   padding: 18px 0;
@@ -50,7 +50,7 @@ body{
   border-top: none;
 }
 
-.day__title{
+.day_title{
   cursor: pointer;
   user-select: none;
   list-style: none;
@@ -62,12 +62,7 @@ body{
   border-radius: 14px;
 }
 
-/* summary 기본 마커(화살표) 감추고 싶으면 주석 해제 */
-/*
-.day__title::-webkit-details-marker{ display: none; }
-*/
-
-/* 썸네일 그리드 */
+/* Archive Thumbnail Grid */
 .grid{
   margin-top: 14px;
   display: grid;
@@ -75,8 +70,8 @@ body{
   gap: 12px;
 }
 
-/* 썸네일 카드 */
-.thumb{
+/* thumbnail */
+.thumbnail{
   display: block;
   border-radius: 14px;
   overflow: hidden;
@@ -87,21 +82,14 @@ body{
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
-.thumb:hover{
+.thumbnail:hover{
   transform: scale(1.03);
   box-shadow: var(--shadow);
 }
 
-.thumb img{
+.thumbnail img{
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-}
-
-.foot{
-  text-align: center;
-  color: var(--muted);
-  font-size: 12px;
-  padding: 8px 18px 28px;
 }
