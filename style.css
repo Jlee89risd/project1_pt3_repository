@@ -1,19 +1,11 @@
-:root{
-  --bg: rgb(206, 202, 196);
-  --text: #111;
-  --muted: rgba(0,0,0,0.58);
-  --panel: rgba(255,255,255,0.32);
-  --panel2: rgba(255,255,255,0.22);
-  --line: rgba(0,0,0,0.12);
-  --shadow: 0 14px 32px rgba(0,0,0,0.12);
+*{
+  box-sizing: border-box;
 }
-
-*{ box-sizing: border-box; }
 
 body{
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  background: rgb(206, 202, 196);
+  color: #111;
   font-family: system-ui, -apple-system, sans-serif;
 }
 
@@ -25,13 +17,18 @@ body{
 .title{
   margin: 0;
   letter-spacing: 0.02em;
-  font-weight: 650;
+  font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .direction{
   margin: 10px 0 0;
-  color: var(--muted);
+  color: rgba(0,0,0,0.58);
   font-size: 13px;
+  font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .archive{
@@ -42,7 +39,7 @@ body{
 
 /* date */
 .day{
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(0,0,0,0.12);
   padding: 18px 0;
 }
 
@@ -57,12 +54,16 @@ body{
   font-weight: 650;
 
   padding: 12px 14px;
-  background: var(--panel);
-  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.32);
+  border: 1px solid rgba(0,0,0,0.12);
   border-radius: 14px;
+
+  font-family: "BBH Bogle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-/* Archive Thumbnail Grid */
+/* Grid */
 .grid{
   margin-top: 14px;
   display: grid;
@@ -76,7 +77,7 @@ body{
   border-radius: 14px;
   overflow: hidden;
 
-  background: var(--panel2);
+  background: rgba(255,255,255,0.22);
   border: 1px solid rgba(0,0,0,0.08);
 
   transition: transform 180ms ease, box-shadow 180ms ease;
@@ -84,7 +85,7 @@ body{
 
 .thumbnail:hover{
   transform: scale(1.03);
-  box-shadow: var(--shadow);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.12);
 }
 
 .thumbnail img{

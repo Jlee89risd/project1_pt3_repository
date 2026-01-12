@@ -1,29 +1,20 @@
-/* root is same as html{} for css.  */
-:root{
-  --bg: rgb(206, 202, 196);
-  --card: whitesmoke;
-  --text: #111;
-  /* muted is for less important text */
-  --muted: #333;
-  --line: rgba(0,0,0,0.14);
-  --shadow: 0 14px 40px rgba(0,0,0,0.18);
+*{
+  box-sizing: border-box;
 }
-
-*{ box-sizing: border-box; }
 
 body{
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
+  background: rgb(206, 202, 196);
+  color: #111;
   font-family: system-ui, -apple-system, sans-serif;
 }
 
 .frame{
-  width: min(92vw, 920px);   
+  width: min(92vw, 920px);
   margin: 24px auto 60px;
-  background: var(--card);
+  background: whitesmoke;
   padding: 26px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.18);
 }
 
 .photo{
@@ -37,7 +28,7 @@ body{
   padding: 0;
   margin: 14px 0 0 0;
   font-size: 13px;
-  color: var(--muted);
+  color: #333;
   font-variant-numeric: tabular-nums;
   letter-spacing: 0.02em;
   line-height: 1.45;
